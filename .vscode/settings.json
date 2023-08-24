@@ -1,5 +1,7 @@
 {
-  "search.searchEditor.reusePriorSearchConfiguration": false,
 
-  "editor.formatOnSave": true
+
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
