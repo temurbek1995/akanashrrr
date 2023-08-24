@@ -1,3 +1,47 @@
+/* GLOBAL FONTS */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+    url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-color-dark: #000;
+  --font-color-light: #fff;
+  --font-coolor-link: #252420;
+  --bg-color: #fff;
+  --accent-color: #ff7500;
+}
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -29,7 +73,6 @@ img {
   height: auto;
 }
 
-
 /* AUTOFILL-STYLES */
 /*input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -45,7 +88,6 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 }*/
 
-
 /* PLACEHOLDER-STYLES */
 /*::-webkit-input-placeholder,
 ::-moz-placeholder,
@@ -54,7 +96,6 @@ select:-webkit-autofill:focus {
   color: rgba(52, 49, 61, 0.5);
   opacity: 1;
 }*/
-
 
 /* VISUALLY-HIDDEN */
 .visually-hidden {
@@ -68,7 +109,6 @@ select:-webkit-autofill:focus {
   overflow: hidden;
 }
 
-
 /* CONTAINER */
 .container {
   width: 100%;
@@ -79,18 +119,28 @@ select:-webkit-autofill:focus {
   margin-right: auto;
 }
 
-
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
+/* GlOBAL-BTN */
 
+.button {
+  color: var(--font-color-light);
+  font-family: sans-serif, "Arial", Roboto;
+  font-style: normal;
+  font-size: bold;
+  text-decoration: none;
+  background-color: var(--accent-color);
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
 }
